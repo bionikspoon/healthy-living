@@ -1,12 +1,24 @@
-# healthy-living
+# Health Living
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Live at: https://bionikspoon-healthy-living.herokuapp.com/
 
-## Build & development
+*(Heroku free tier, give it a second to wake up)*
 
-Run `grunt` for building and `grunt serve` for preview.
+## The project
 
-## Testing
+The goal of this exercise was to rapidly build a clickable prototype in a short amount of time. And proceed to spend a much greater amount of time learning why Heroku can't serve it ¯\\\_(ツ)\_/¯
 
-Running `grunt test` will run the unit tests with karma.
+It uses angular with bootstrap, angular-bootstrap, and ng-grid.
+
+The logic, assets, and content is mostly mocked to appear like it's working, but it does not--by design.
+
+
+## Screens
+
+![index](screenshot.index.png)
+
+![articles](screenshot.articles.png)
+
+![gallery](screenshot.gallery.png)
+
+![subscribers](screenshot.subscribers.png)
