@@ -34,6 +34,11 @@ angular.module('healthyLivingApp', [
         controller: 'AboutCtrl'
       })
 
+      .when('/articles', {
+        templateUrl: 'views/articles.html',
+        controller: 'ArticlesCtrl'
+      })
+
       .otherwise({
         redirectTo: '/'
       });
