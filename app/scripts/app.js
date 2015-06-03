@@ -20,7 +20,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.bootstrap',
-    'ui.grid'
+    'ngGrid'
 
   ])
 

@@ -46,6 +46,6 @@ angular.module('healthyLivingApp').controller('MainCtrl', function ($scope) {
       title: 'About Us',
       summary: '#111, Good Health Blvd, Happy Palace, Antarctica, 432167'
     }
-  ]
+  ];
 
 });

@@ -1,0 +1,17 @@
+#subscribers {
+  .gridStyles {
+    width: 940px;
+    height: 300px;
+  }
+
+  .ngRow.even {
+    background: aliceblue;
+  }
+
+  .ngRow.odd {
+    background: darken(aliceblue, 5%);
+  }
+  .new-user {
+    margin-bottom: 10px;
+  }
+}
