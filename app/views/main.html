@@ -1,23 +1,37 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<carousel interval="setInterval">
+    <slide ng-repeat="slide in slides"
+        active="slide.active">
+        <img class="carousel-image"
+            ng-src="{{ slide.image }}" />
+        <!-- /.carousel-image -->
+        <div class="carousel-caption">
+            <h2>{{ slide.title }}</h2>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+            <p>{{ slide.text }}</p>
+        </div>
+        <!-- /.carousel-caption -->
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    </slide>
+</carousel>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+<div class="hero-unit">
+    <h1>Welcome to Healthy Living</h1>
+
+    <p>This is a Rapid Prototype demo how you can use AngularJS with Angular UI
+        and Bootstrap to quickly build a clickable prototype for clients.</p>
+</div><!-- /.hero-unit -->
+<div class="container-fluid marketing">
+    <div class="row-fluid">
+        <div class="col-md-4 col-lg-4"
+            ng-repeat="block in content">
+            <img class="img-circle"
+                ng-src="{{ block.img }}" />
+
+            <h2>{{ block.title }}</h2>
+
+            <p>{{ block.summary }}</p>
+        </div>
+        <!-- /.col-md-4 col-lg-4 -->
+    </div>
+    <!-- /.row-fluid -->
+</div><!-- /.container marketing -->
