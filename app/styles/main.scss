@@ -2,6 +2,7 @@ $icon-font-path: "./fonts/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "index";
 @import "gallery";
 @import "subscribers";
 
@@ -14,34 +15,4 @@ $icon-font-path: "./fonts/";
 
 body {
   padding-top: 50px;
-}
-#main {
-  .carousel-image {
-    width: 100%;
-  }
-
-  .hero-unit {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    padding: 60px;
-    margin-bottom: 20px;
-  }
-
-  .marketing {
-    .col-lg-4, .col-md-4 {
-      margin-bottom: 20px;
-      text-align: center;
-      p {
-        margin-right: 10px;
-        margin-left: 10px;
-      }
-    }
-    h2 {
-      font-weight: normal;
-    }
-  }
-
-
 }
