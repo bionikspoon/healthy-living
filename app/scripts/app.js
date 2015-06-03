@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('healthyLivingApp', [
+angular.module('healthyLivingApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -17,18 +16,24 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
+
   ])
+
   .config(function ($routeProvider) {
     $routeProvider
+
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+
       .otherwise({
         redirectTo: '/'
       });
