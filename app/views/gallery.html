@@ -1,1 +1,22 @@
-<p>This is the gallery view.</p>
+<div class="container">
+    <h1>Gallery</h1>
+
+    <div class="thumbnails">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+            ng-repeat="picture in pictures">
+            <img ng-src="{{ picture.url }}" />
+
+            <div>
+                <rating ng-model="rate"
+                    max="max"
+                    readonly="isReadonly"></rating>
+            </div>
+
+            <h3>{{ picture.title }}</h3>
+
+            <p>{{ picture.summary }}</p>
+        </div>
+        <!-- /.col-lg-4 col-md-4 col-sm-6 col-xs-12 -->
+    </div>
+    <!-- /.thumbnails -->
+</div><!-- /.container -->
