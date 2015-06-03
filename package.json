@@ -35,13 +35,13 @@
   },
   "devDependencies":  { },
   "engines":          {
-    "iojs": "2.1.0",
+    "iojs": "2.1.*",
     "npm":  "2.11.*"
   },
   "scripts":          {
     "test":        "grunt test",
     "start":       "node server.js",
-    "postinstall": "bower install && grunt build"
+    "postinstall": "bower install && grunt build --force"
   },
   "description":      "This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular) version 0.11.1.",
   "cacheDirectories": [
