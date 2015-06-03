@@ -1,7 +1,7 @@
 node_modules
 .tmp
 .sass-cache
+!dist/bower_components/
 bower_components/
-!dist/
 .idea/
 npm-debug.log
