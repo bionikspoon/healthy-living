@@ -1,6 +1,8 @@
 # Health Living
 
-Live at: https://bionikspoon-healthy-living.herokuapp.com/ (Heroku free tier, give it a second to wake up)
+Live at: https://bionikspoon-healthy-living.herokuapp.com/
+
+*(Heroku free tier, give it a second to wake up)*
 
 ## The project
 
