@@ -39,6 +39,16 @@ angular.module('healthyLivingApp', [
         controller: 'ArticlesCtrl'
       })
 
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
+      })
+
+      .when('/subscribers', {
+        templateUrl: 'views/subscribers.html',
+        controller: 'SubscribersCtrl'
+      })
+
       .otherwise({
         redirectTo: '/'
       });
