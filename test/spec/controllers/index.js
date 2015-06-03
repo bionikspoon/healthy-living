@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: IndexCtrl', function () {
 
   // load the controller's module
   beforeEach(module('healthyLivingApp'));
 
-  var MainCtrl,
+  var IndexCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
+    IndexCtrl = $controller('IndexCtrl', {
       $scope: scope
     });
   }));

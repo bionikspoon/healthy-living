@@ -416,6 +416,13 @@ module.exports = function (grunt) {
           }
         ]
       },
+      fonts: {
+        expand: true,
+        flatten: true,
+        cwd: '.',
+        dest: '<%= yeoman.app %>/styles/fonts',
+        src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*'
+      },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
@@ -462,15 +469,10 @@ module.exports = function (grunt) {
         'wiredep',
         'concurrent:server',
         'autoprefixer:server',
+        'copy:fonts',
         'connect:livereload',
         'watch'
       ]);
-    });
-
-  grunt.registerTask('server', 'DEPRECATED TASK. Use the "serve" task instead',
-    function (target) {
-      grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-      grunt.task.run(['serve:' + target]);
     });
 
   grunt.registerTask('test', [
@@ -484,6 +486,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'copy:fonts',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',

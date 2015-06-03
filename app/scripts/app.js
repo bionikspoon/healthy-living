@@ -28,8 +28,8 @@ angular
     $routeProvider
 
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/index.html',
+        controller: 'IndexCtrl'
       })
 
       .when('/articles', {
