@@ -12,13 +12,7 @@ angular
 
   .module('healthyLivingApp', [
     'ngAnimate',
-    'ngAria',
-    'ngCookies',
-    'ngMessages',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'ui.bootstrap',
     'ngGrid'
 
