@@ -8,7 +8,9 @@
  *
  * Main module of the application.
  */
-angular.module('healthyLivingApp', [
+angular
+
+  .module('healthyLivingApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -17,7 +19,8 @@ angular.module('healthyLivingApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ui.grid'
 
   ])
 
@@ -27,11 +30,6 @@ angular.module('healthyLivingApp', [
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      })
-
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
       })
 
       .when('/articles', {
